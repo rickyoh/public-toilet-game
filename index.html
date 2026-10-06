@@ -10,6 +10,16 @@
     <link rel="manifest" href="./manifest.webmanifest" />
     <link rel="apple-touch-icon" href="./icons/icon-180.png" />
     <title>公廁 Public Toilet</title>
+    <!-- what a search result or a link pasted into a chat says about the game (the picture and the address are
+         added by the build, which is told where the game will be served: see vite.config.ts) -->
+    <meta
+      name="description"
+      content="The night shift at a Lan Kwai Fong public toilet. Mop, scrub, unblock and restock while the queue grows: cozy at 7 PM, chaos by 2 AM. Free in the browser, on a desk or a phone."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="公廁 Public Toilet" />
+    <meta property="og:title" content="公廁 Public Toilet" />
+    <meta property="og:description" content="The night shift at a Lan Kwai Fong public toilet. Cozy at 7 PM, chaos by 2 AM. Somebody has to." />
     <link
       rel="icon"
       href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚽</text></svg>"
@@ -20,15 +30,25 @@
       href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Noto+Sans+TC:wght@700;900&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="./assets/index-Bt_KZHs6.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-CRP1tCoH.css">
+    <script type="module" crossorigin src="./assets/index-Bjy8w1gK.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DWc50rU8.css">
+    <meta property="og:url" content="https://publictoilet.addoil.io/">
+    <meta property="og:image" content="https://publictoilet.addoil.io/og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
   </head>
   <body>
     <canvas id="game"></canvas>
     <div id="overlay"></div>
     <div id="hud"></div>
     <div id="touch"></div>
-    <div id="screen" class="show"><p class="loading">Loading…</p></div>
+    <div id="screen" class="show">
+      <div class="loading">
+        <div class="zh">公廁</div>
+        <div class="bar"><i></i></div>
+      </div>
+    </div>
     <div id="rotate">
       <div>
         <div class="turn">📱</div>
